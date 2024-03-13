@@ -1,4 +1,4 @@
-﻿namespace SistemasVenta.DAL
+﻿namespace SistemasVentas.DAL
 {
     public class Class1
     {
