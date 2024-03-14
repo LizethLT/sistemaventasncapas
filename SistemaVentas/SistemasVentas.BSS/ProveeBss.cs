@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.BSS
 {
-    public class ProveeBss
+    public  class ProveeBss
     {
         ProveeDal dal = new ProveeDal();
         public DataTable ListarProveeBss()

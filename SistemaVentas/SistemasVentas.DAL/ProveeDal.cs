@@ -11,7 +11,7 @@ namespace SistemasVentas.DAL
     {
         public DataTable ListarProveeDal()
         {
-            string consulta = "select * from provee";
+            string consulta = "select * from persona";
             DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
             return lista;
         }

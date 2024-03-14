@@ -10,10 +10,10 @@ namespace SistemasVentas.BSS
 {
     public class UsuarioRolBss
     {
-        UsuarioRolDal dal = new UsuarioRolDal();
-        public DataTable ListarUsuarioRolBss()
+        UsuarioDal dal = new UsuarioDal();
+        public DataTable ListarUsuarioBss()
         {
-            return dal.ListarUsuariosRolDal();
+            return dal.ListarUsuarioDal();
         }
     }
 }

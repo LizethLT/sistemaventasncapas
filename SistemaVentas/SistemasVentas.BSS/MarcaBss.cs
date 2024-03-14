@@ -13,7 +13,7 @@ namespace SistemasVentas.BSS
         MarcaDal dal = new MarcaDal();
         public DataTable ListarMarcaBss()
         {
-            return dal.ListarMarcasDal();
+            return dal.ListarMarcaDal();
         }
     }
 }

@@ -20,7 +20,7 @@ namespace SistemasVentas.VISTA.ProveeVistas
         ProveeBss bss = new ProveeBss();
         private void ProveeListarVista_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = bss.ListarProveeBss();
+            dataGridView1.DataSource = bss.ListarProveeBss;
         }
     }
 }

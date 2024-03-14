@@ -9,18 +9,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SistemasVentas.VISTA.ProductoVistas
+namespace SistemasVentas.VISTA.TipoProdVistas
 {
-    public partial class ProductoListarVista : Form
+    public partial class TipoProdListarVista : Form
     {
-        public ProductoListarVista()
+        public TipoProdListarVista()
         {
             InitializeComponent();
         }
-        ProductoBss bss = new ProductoBss();    
-        private void ProductoListarVista_Load(object sender, EventArgs e)
+        TipoProdBss bss = new TipoProdBss();
+        private void TipoProdListarVista_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = bss.ListarProductoBss();
+            dataGridView1.DataSource = bss.ListarTipoProdBss();
         }
     }
 }

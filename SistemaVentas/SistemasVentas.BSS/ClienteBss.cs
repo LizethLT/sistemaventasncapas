@@ -13,7 +13,7 @@ namespace SistemasVentas.BSS
         ClienteDal dal = new ClienteDal();
         public DataTable ListarClienteBss()
         {
-            return dal.ListarClientesDal();
+            return dal.ListarClienteDal();
         }
     }
 }

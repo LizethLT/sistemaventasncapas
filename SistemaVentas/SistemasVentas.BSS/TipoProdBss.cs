@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.BSS
 {
-    public class ProductoBss
+    public class TipoProdBss
     {
-        ProductoDal dal = new ProductoDal();
-        public DataTable ListarProductoBss()
+        TipoProdDal dal = new TipoProdDal();
+        public DataTable ListarTipoProdBss()
         {
-            return dal.ListarProductoDal();
+            return dal.ListarTipoProdDal();
         }
     }
 }

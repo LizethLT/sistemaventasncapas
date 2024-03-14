@@ -1,6 +1,6 @@
-﻿namespace SistemasVentas.VISTA.ProductoVistas
+﻿namespace SistemasVentas.VISTA.DetalleIngVistas
 {
-    partial class ProductoListarVista
+    partial class DetalleIngListarVista
     {
         /// <summary>
         /// Required designer variable.
@@ -41,18 +41,18 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(534, 426);
+            dataGridView1.Size = new Size(546, 426);
             dataGridView1.TabIndex = 0;
             // 
-            // ProductoListarVista
+            // DetalleIngListarVista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(566, 450);
+            ClientSize = new Size(572, 450);
             Controls.Add(dataGridView1);
-            Name = "ProductoListarVista";
-            Text = "ProductoListarVista";
-            Load += ProductoListarVista_Load;
+            Name = "DetalleIngListarVista";
+            Text = "DetalleIngListarVista";
+            Load += DetalleIngListarVista_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

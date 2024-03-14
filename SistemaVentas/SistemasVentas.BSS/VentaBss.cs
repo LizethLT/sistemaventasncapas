@@ -13,7 +13,7 @@ namespace SistemasVentas.BSS
         VentaDal dal = new VentaDal();
         public DataTable ListarVentaBss()
         {
-            return dal.ListarVentasDal();
+            return dal.ListarVentaDal();
         }
     }
 }

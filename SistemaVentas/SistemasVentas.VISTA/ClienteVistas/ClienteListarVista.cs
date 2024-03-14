@@ -17,7 +17,7 @@ namespace SistemasVentas.VISTA.ClienteVistas
         {
             InitializeComponent();
         }
-        ClienteBss bss = new ClienteBss();
+        ClienteBss bss= new ClienteBss();   
         private void ClienteListarVista_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bss.ListarClienteBss();

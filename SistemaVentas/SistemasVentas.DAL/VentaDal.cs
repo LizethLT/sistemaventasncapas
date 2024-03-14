@@ -9,9 +9,9 @@ namespace SistemasVentas.DAL
 {
     public class VentaDal
     {
-        public DataTable ListarVentasDal()
+        public DataTable ListarVentaDal()
         {
-            string consulta = "select * from venta";
+            string consulta = "select * from persona";
             DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
             return lista;
         }

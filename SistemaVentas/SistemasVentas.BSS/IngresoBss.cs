@@ -13,7 +13,7 @@ namespace SistemasVentas.BSS
         IngresoDal dal = new IngresoDal();
         public DataTable ListarIngresoBss()
         {
-            return dal.ListarIngresosDal();
+            return dal.ListarIngresoDal();
         }
     }
 }

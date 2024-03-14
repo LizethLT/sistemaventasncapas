@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.BSS
 {
-    public class DetalleVentaBss
+    public class DetalleIngBss
     {
-        DetalleVentaDal dal = new DetalleVentaDal();
-        public DataTable ListarDetalleVentaBss()
+        DetalleIngDal dal = new DetalleIngDal();
+        public DataTable ListarDetalleIngBss()
         {
-            return dal.ListarDetalleVentasDal();
+            return dal.ListarDetalleIngDal();
         }
     }
 }

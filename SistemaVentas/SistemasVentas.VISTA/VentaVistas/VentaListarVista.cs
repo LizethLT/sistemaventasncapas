@@ -17,7 +17,7 @@ namespace SistemasVentas.VISTA.VentaVistas
         {
             InitializeComponent();
         }
-        VentaBss bss = new VentaBss();
+         VentaBss bss = new VentaBss();
         private void VentaListarVista_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bss.ListarVentaBss();

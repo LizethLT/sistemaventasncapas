@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.DAL
 {
-    public class MarcaDal
+    public  class MarcaDal
     {
-        public DataTable ListarMarcasDal()
+        public DataTable ListarMarcaDal()
         {
-            string consulta = "select * from marca";
+            string consulta = "select * from persona";
             DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
             return lista;
         }

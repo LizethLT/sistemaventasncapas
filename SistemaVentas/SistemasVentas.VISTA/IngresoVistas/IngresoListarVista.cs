@@ -17,7 +17,7 @@ namespace SistemasVentas.VISTA.IngresoVistas
         {
             InitializeComponent();
         }
-        IngresoBss bss = new IngresoBss();
+        IngresoBss bss = new IngresoBss();  
         private void IngresoListarVista_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bss.ListarIngresoBss();

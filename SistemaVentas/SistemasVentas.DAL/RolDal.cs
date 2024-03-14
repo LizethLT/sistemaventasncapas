@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.DAL
 {
-    public class RolDal
+    public  class RolDal
     {
         public DataTable ListarRolDal()
         {
-            string consulta = "select * from rol";
+            string consulta = "select * from persona";
             DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
             return lista;
         }

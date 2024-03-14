@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.DAL
 {
-    public class ClienteDal
+    public class DetalleIngDal
     {
-       
-            public DataTable ListarClienteDal()
+        
+            public DataTable ListarDetalleIngDal()
             {
-                string consulta = "select * from cliente";
+                string consulta = "select * from persona";
                 DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
                 return lista;
             }

@@ -17,10 +17,10 @@ namespace SistemasVentas.VISTA.MarcaVistas
         {
             InitializeComponent();
         }
-        MarcaBss bss = new MarcaBss();
+        MarcaBss bss = new MarcaBss();  
         private void MarcaListarVista_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = bss.ListarMarcaBss();
+            dataGridView1.DataSource= bss.ListarMarcaBss();
         }
     }
 }

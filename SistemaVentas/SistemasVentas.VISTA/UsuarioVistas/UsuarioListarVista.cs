@@ -20,7 +20,7 @@ namespace SistemasVentas.VISTA.UsuarioVistas
         UsuarioBss bss = new UsuarioBss();
         private void UsuarioListarVista_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = bss.ListarUsuarioBss();
+            dataGridView1.DataSource = bss.ListarUsuarioBss(); 
         }
     }
 }
