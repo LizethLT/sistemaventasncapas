@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaVentas.Modelos
 {
-    internal class UsuarioRol
+    public class UsuarioRol
     {
 
         public int IdUsuarioRol { get; set; }
@@ -14,7 +14,7 @@ namespace SistemaVentas.Modelos
         public int IdRol { get; set; }
         public DateTime FechaAsignada { get; set; }
         public string Estado { get; set; }
-
+        
 
     }
 }

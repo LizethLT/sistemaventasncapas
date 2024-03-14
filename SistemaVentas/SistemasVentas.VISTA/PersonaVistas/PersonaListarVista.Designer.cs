@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1=new DataGridView();
+            dataGridView1 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
-            dataGridView1.AllowUserToAddRows=false;
-            dataGridView1.AllowUserToDeleteRows=false;
-            dataGridView1.ColumnHeadersHeightSizeMode=DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location=new Point(12, 12);
-            dataGridView1.Name="dataGridView1";
-            dataGridView1.ReadOnly=true;
-            dataGridView1.RowTemplate.Height=25;
-            dataGridView1.Size=new Size(544, 426);
-            dataGridView1.TabIndex=0;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(12, 12);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(573, 426);
+            dataGridView1.TabIndex = 0;
             // 
             // PersonaListarVista
             // 
-            AutoScaleDimensions=new SizeF(7F, 15F);
-            AutoScaleMode=AutoScaleMode.Font;
-            ClientSize=new Size(568, 450);
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(597, 450);
             Controls.Add(dataGridView1);
-            Name="PersonaListarVista";
-            Text="PersonaListarVista";
-            Load+=PersonaListarVista_Load;
+            Name = "PersonaListarVista";
+            Text = "PersonaListarVista";
+            Load += PersonaListarVista_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

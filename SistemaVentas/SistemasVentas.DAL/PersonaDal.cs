@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.Design;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -10,12 +9,11 @@ namespace SistemasVentas.DAL
 {
     public class PersonaDal
     {
-        public DataTable ListarPerosnasDal() 
+        public DataTable ListarPersonasDal()
         {
-            string consulta = "Select * from Persona";
-            DataTable lista = conexion.EjecutarDataTabla(consulta, "Tabla");
-            return lista;   
-
+            string consulta = "select * from persona";
+            DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
+            return lista;
         }
     }
 }

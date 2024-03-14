@@ -11,9 +11,9 @@ namespace SistemasVentas.BSS
     public class PersonaBss
     {
         PersonaDal dal = new PersonaDal();
-        public DataTable ListarPersonaBss() 
+        public DataTable ListarPersonaBss()
         {
-            return dal.ListarPerosnasDal();
+            return dal.ListarPersonasDal();
         }
     }
 }

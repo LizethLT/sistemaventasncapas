@@ -11,7 +11,7 @@ namespace SistemaVentas.Modelos
         public int IdDetalleIngreso { get; set; }
         public int IdIngreso { get; set; }
         public int IdProducto { get; set; }
-        public DateTime FechaVencimineto { get; set; }
+        public DateTime FechaVencimiento { get; set; }
         public int cantidad { get; set; }
         public decimal PrecioCosto { get; set; }
         public decimal PrecioVenta { get; set; }

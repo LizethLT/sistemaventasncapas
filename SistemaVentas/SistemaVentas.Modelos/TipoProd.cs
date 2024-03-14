@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SistemaVentas.Modelos
 {
-    internal class TipoProd
+    public class TipoProd
     {
-        public int IdTipoProdu { get; set; }
+        public int IdTipoProd { get; set; }
         public string Nombre { get; set; }
         public string Estado { get; set; }
 
