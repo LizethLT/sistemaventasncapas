@@ -1,4 +1,5 @@
 ﻿using SistemasVentas.DAL;
+using SistemaVentas.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,10 +11,16 @@ namespace SistemasVentas.BSS
 {
     public class UsuarioRolBss
     {
-        UsuarioDal dal = new UsuarioDal();
-        public DataTable ListarUsuarioBss()
+        UsuarioRolDal dal = new UsuarioRolDal();
+        public DataTable ListarUsuarioRolBss()
         {
-            return dal.ListarUsuarioDal();
+            return dal.ListarUsuarioRolDal();
         }
+
+        public void InsertarUsuarioRolBss(UsuarioRol usuarioRol)
+        {
+            dal.InsertarUsuarioRolDal(usuarioRol);
+        }
+
     }
 }

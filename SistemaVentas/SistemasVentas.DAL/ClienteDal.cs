@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaVentas.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -16,6 +17,16 @@ namespace SistemasVentas.DAL
                 DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
                 return lista;
             }
-        
+        public void InsertarClienteDal(Cliente cliente)
+        {
+            string consulta = "insert into persona values(" + cliente.IdPersona + "," +
+                                                         "'" + cliente.TipoCliente + "'," +
+                                                         "'" + cliente.CodigoCliente + "'," +
+                                                         "'Activo')";
+            conexion.Ejecutar(consulta);
+
+
+        }
+
     }
 }

@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SistemasVentas.DAL\SistemasVentas.DAL.csproj" />
-    <ProjectReference Include="..\SistemaVentas.Modelos\SistemaVentas.Modelos.csproj" />
   </ItemGroup>
 
 </Project>
