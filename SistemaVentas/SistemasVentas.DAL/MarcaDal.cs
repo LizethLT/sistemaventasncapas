@@ -1,28 +1,26 @@
-﻿using SistemaVentas.Modelos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.DAL
 {
-    public  class MarcaDal
+    public class MarcaDAL
     {
         public DataTable ListarMarcaDal()
         {
-            string consulta = "select * from persona";
-            DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
+            string consulta = "SELECT * FROM MARCA";
+            DataTable lista = Conexion.EjecutarDataTabla(consulta, "tabla");
             return lista;
         }
-
         public void InsertarMarcaDal(Marca marca)
         {
-            string consulta = "insert into persona values('" + marca.Nombre + "'," +
-                                                      "'Activo')";
-            conexion.Ejecutar(consulta);
-
+            string consulta = "INSERT INTO MARCA VALUES('" + marca.Nombre + "'," +
+                                                            "'Activo')";
+            Conexion.Ejecutar(consulta);
 
         }
     }

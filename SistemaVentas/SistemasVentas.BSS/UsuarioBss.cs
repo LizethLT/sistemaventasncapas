@@ -1,17 +1,17 @@
-﻿using SistemasVentas.DAL;
-using SistemaVentas.Modelos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SistemasVentas.DAL;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.BSS
 {
     public class UsuarioBss
     {
-        UsuarioDal dal = new UsuarioDal();
+        UsuarioDAL dal = new UsuarioDAL();
         public DataTable ListarUsuarioBss()
         {
             return dal.ListarUsuarioDal();
@@ -19,6 +19,10 @@ namespace SistemasVentas.BSS
         public void InsertarUsuarioBss(Usuario usuario)
         {
             dal.InsertarUsuarioDal(usuario);
+        }
+        public Usuario ObtenerIdBss(int id) 
+        {
+            return dal.ObtenerUsuarioId(id);    
         }
     }
 }

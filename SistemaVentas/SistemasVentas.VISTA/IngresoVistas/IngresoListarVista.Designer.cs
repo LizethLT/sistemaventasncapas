@@ -37,18 +37,17 @@
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 12);
+            dataGridView1.Location = new Point(22, 29);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(547, 426);
+            dataGridView1.Size = new Size(734, 265);
             dataGridView1.TabIndex = 0;
             // 
             // IngresoListarVista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(570, 450);
+            ClientSize = new Size(800, 450);
             Controls.Add(dataGridView1);
             Name = "IngresoListarVista";
             Text = "IngresoListarVista";

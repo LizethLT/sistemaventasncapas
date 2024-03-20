@@ -1,5 +1,4 @@
-﻿using SistemasVentas.BSS;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemasVentas.BSS;
 
 namespace SistemasVentas.VISTA.TipoProdVistas
 {
@@ -17,6 +17,7 @@ namespace SistemasVentas.VISTA.TipoProdVistas
         {
             InitializeComponent();
         }
+
         TipoProdBss bss = new TipoProdBss();
         private void TipoProdListarVista_Load(object sender, EventArgs e)
         {

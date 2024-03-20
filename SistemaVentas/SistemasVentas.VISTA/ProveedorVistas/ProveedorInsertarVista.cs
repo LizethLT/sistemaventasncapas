@@ -1,6 +1,4 @@
-﻿using SistemasVentas.BSS;
-using SistemaVentas.Modelos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemasVentas.BSS;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.VISTA.ProveedorVistas
 {
@@ -18,17 +18,16 @@ namespace SistemasVentas.VISTA.ProveedorVistas
         {
             InitializeComponent();
         }
-         ProveedorBss bss = new ProveedorBss();
-
+        ProveedorBss bss = new ProveedorBss();
         private void button1_Click(object sender, EventArgs e)
         {
-            Proveedor prov = new Proveedor();
-            prov.Nombre = textBox1.Text;
-            prov.Telefono = textBox2.Text;
-            prov.Direccion = textBox3.Text;
-
-            bss.InsertarProveedorBss(prov);
-            MessageBox.Show("Se guardo correctamente el proveedor");
+            Proveedor p = new Proveedor();
+            p.Nombre =textBox1.Text;
+            p.Telefono =textBox2.Text;
+            p.Direccion =textBox3.Text;
+            
+            bss.InsertarProveedorBss(p);
+            MessageBox.Show("Se guardó correctamente.");
         }
     }
 }

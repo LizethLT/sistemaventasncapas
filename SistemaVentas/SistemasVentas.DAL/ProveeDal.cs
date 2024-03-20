@@ -1,32 +1,28 @@
-﻿using SistemaVentas.Modelos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.DAL
 {
-    public class ProveeDal
+    public class ProveeDAL
     {
         public DataTable ListarProveeDal()
         {
-            string consulta = "select * from persona";
-            DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
-            return lista;
+            string consulta = "SELECT * FROM PROVEE";
+            DataTable listar = Conexion.EjecutarDataTabla(consulta, "tabla");
+            return listar;
         }
-
-        public void InsertarProveeDal(Provee provee)
+        public void IngresarProveeDal(Provee provee)
         {
-            string consulta = "insert into persona values(" + provee.IdProducto + "," +
-                                                      "" + provee.IdProveedor + "," +
-                                                      "'" + provee.Fecha + "'," +
-                                                      "" + provee.Precio + "," +
-                                                      "'Activo')";
-            conexion.Ejecutar(consulta);
-
-
+            string consulta = "INSERT INTO PROVEE VALUES (" + provee.IdProducto + " ," +
+                                                          " " + provee.IdProveedor + " ," +
+                                                          " '" + provee.Fecha + "' ," +
+                                                          " " + provee.Precio + ")";
+            Conexion.Ejecutar(consulta);
         }
     }
 }

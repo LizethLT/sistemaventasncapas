@@ -1,5 +1,5 @@
 ﻿using SistemasVentas.BSS;
-using SistemaVentas.Modelos;
+using SistemasVentas.Modelos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,19 +18,28 @@ namespace SistemasVentas.VISTA.PersonaVistas
         {
             InitializeComponent();
         }
+
+        private void PersonaInsertarVista_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
         PersonaBss bss = new PersonaBss();
-
-        private void button1_Click(object sender, EventArgs e)
-        { 
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
             Persona p = new Persona();
-            p.Nombre = textBox1.Text;
-            p.Apellido = textBox2.Text;
-            p.Telefono= textBox3.Text;
-            p.Ci = textBox4.Text;
-            p.Correo = textBox5.Text;
+            p.Nombre=textBox1.Text;
+            p.Apellido=textBox2.Text;
+            p.Telefono=textBox3.Text;
+            p.CI=textBox4.Text;
+            p.Correo=textBox5.Text;
 
-            bss.InsertarPersonaBss(p);
-            MessageBox.Show("Se guardo corectamente la persona");
+            bss.InsertarPersonasBss(p);
+            MessageBox.Show("Se guardó correctamente el rol");
         }
     }
 }

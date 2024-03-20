@@ -1,5 +1,4 @@
-﻿using SistemasVentas.BSS;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemasVentas.BSS;
 
 namespace SistemasVentas.VISTA.MarcaVistas
 {
@@ -17,10 +17,11 @@ namespace SistemasVentas.VISTA.MarcaVistas
         {
             InitializeComponent();
         }
-        MarcaBss bss = new MarcaBss();  
+
+        MarcaBss bss = new MarcaBss();
         private void MarcaListarVista_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource= bss.ListarMarcaBss();
+            dataGridView1.DataSource = bss.ListarMarcaBss();
         }
     }
 }

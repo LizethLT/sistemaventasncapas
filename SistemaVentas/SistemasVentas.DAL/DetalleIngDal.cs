@@ -1,39 +1,32 @@
-﻿using SistemaVentas.Modelos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.DAL
 {
-    public class DetalleIngDal
+    public class DetalleIngDAL
     {
-        
-            public DataTable ListarDetalleIngDal()
-            {
-                string consulta = "select * from persona";
-                DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
-                return lista;
-            }
-
-            public void InsertarDetalleIngDal(DetalleIngreso detalleIngreso)
-            {
-               string consulta = "insert into persona values(" + detalleIngreso.IdProducto + "," +
-                                                         "" + detalleIngreso.IdIngreso + "," +
-                                                         "'" + detalleIngreso.FechaVencimiento + "'," +
-                                                         "" + detalleIngreso.cantidad +"," +
-                                                         "" + detalleIngreso.PrecioCosto + "," +
-                                                         "" + detalleIngreso.PrecioVenta + "," +
-                                                         "" + detalleIngreso.Subtotal + "," +
-                                                         "'Activo')";
-              conexion.Ejecutar(consulta);
-
-
-            }
-
-
-
+        public DataTable ListarDetalleIngDal()
+        {
+            string consulta = "SELECT * FROM DETALLEING";
+            DataTable lista = Conexion.EjecutarDataTabla(consulta, "tabla");
+            return lista;
+        }
+        public void InsertarDetalleIngDal(DetalleIng DetalleIng)
+        {
+            string consulta = "INSERT INTO DETALLEING VALUES ( " + DetalleIng.IdIngreso + " ," +
+                                                               " " + DetalleIng.IdProducto + " ," +
+                                                               " '" + DetalleIng.FechaVenc + "' ," +
+                                                               " " + DetalleIng.Cantidad + " ," +
+                                                               " " + DetalleIng.PrecioCosto + " ," +
+                                                               " " + DetalleIng.PrecioVenta + " ," +
+                                                               " " + DetalleIng.Subtotal + " ," +
+                                                               " 'Exitoso')";
+            Conexion.Ejecutar(consulta);
+        }
     }
 }

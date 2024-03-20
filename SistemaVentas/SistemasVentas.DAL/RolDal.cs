@@ -1,29 +1,27 @@
-﻿using SistemaVentas.Modelos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.DAL
 {
-    public  class RolDal
+    public class RolDAL
     {
         public DataTable ListarRolDal()
         {
-            string consulta = "select * from persona";
-            DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
+            string consulta = "SELECT * FROM ROL";
+            DataTable lista = Conexion.EjecutarDataTabla(consulta, "tabla");
             return lista;
         }
-
         public void InsertarRolDal(Rol rol)
         {
-            string consulta = "insert into persona values('" + rol.Nombre + "'," +
-                                                      "'Activo')";
-            conexion.Ejecutar(consulta);
-
-
+            string consulta = "INSERT INTO ROL VALUES('" + rol.Nombre + "', " +
+                                                        " 'Activo')";
+            Conexion.Ejecutar(consulta);
         }
     }
 }

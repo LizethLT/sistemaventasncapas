@@ -1,6 +1,4 @@
-﻿using SistemasVentas.BSS;
-using SistemaVentas.Modelos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemasVentas.BSS;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.VISTA.TipoProdVistas
 {
@@ -18,14 +18,14 @@ namespace SistemasVentas.VISTA.TipoProdVistas
         {
             InitializeComponent();
         }
-         TipoProdBss bss = new TipoProdBss();
+        TipoProdBss bss = new TipoProdBss();
         private void button1_Click(object sender, EventArgs e)
         {
-            TipoProd tp = new TipoProd();
-            tp.Nombre= textBox1.Text;
+           TipoProd t = new TipoProd();
+            t.Nombre = textBox1.Text;
 
-            bss.InsertarTipoProdBss(tp);
-            MessageBox.Show("Se guardo correctamente el tipo de producto");
+            bss.InsertarTipoProdBss(t);
+            MessageBox.Show("Se guardó correctamente el tipoProd");
         }
     }
 }

@@ -1,17 +1,17 @@
-﻿using SistemasVentas.DAL;
-using SistemaVentas.Modelos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SistemasVentas.DAL;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.BSS
 {
     public class MarcaBss
     {
-        MarcaDal dal = new MarcaDal();
+        MarcaDAL dal = new MarcaDAL();
         public DataTable ListarMarcaBss()
         {
             return dal.ListarMarcaDal();

@@ -1,5 +1,4 @@
-﻿using SistemasVentas.BSS;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemasVentas.BSS;
 
 namespace SistemasVentas.VISTA.RolVistas
 {
@@ -17,10 +17,11 @@ namespace SistemasVentas.VISTA.RolVistas
         {
             InitializeComponent();
         }
+
         RolBss bss = new RolBss();
         private void RolListarVista_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = bss.ListarRolBss;
+            dataGridView1.DataSource = bss.ListarRolBss();
         }
     }
 }

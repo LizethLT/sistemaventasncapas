@@ -1,32 +1,29 @@
-﻿using SistemaVentas.Modelos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.DAL
 {
-    public class VentaDal
+    public class VentaDAL
     {
         public DataTable ListarVentaDal()
         {
-            string consulta = "select * from persona";
-            DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
+            string consulta = "SELECT * FROM VENTA";
+            DataTable lista = Conexion.EjecutarDataTabla(consulta, "tabla");
             return lista;
         }
-
         public void InsertarVentaDal(Venta venta)
         {
-            string consulta = "insert into persona values(" + venta.IdCliente+ "," +
-                                                         "" + venta.IdVendedor + "," +
-                                                         "'" + venta.Fecha + "'," +
-                                                         "" + venta.Total + "," +
-                                                         "'Activo')";
-            conexion.Ejecutar(consulta);
-
-
+            string consulta = "INSERT INTO VENTA VALUES ( " + venta.IdCliente + " , " +
+                                                          " " + venta.IdVendedor + " , " +
+                                                          " '" + venta.Fecha + "' , " +
+                                                          " " + venta.Total + " , " +
+                                                          " 'Exitoso')";
+            Conexion.Ejecutar(consulta);
         }
     }
 }

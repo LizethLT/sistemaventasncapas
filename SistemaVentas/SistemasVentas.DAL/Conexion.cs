@@ -8,18 +8,21 @@ using System.Data.SqlClient;
 
 namespace SistemasVentas.DAL
 {
-    public class conexion
+    public class Conexion
     {
 
         public static string CONECTAR
         {
+            //data source, va el server name, si se lo deja en local deberia de funcionar, gral
+            //Initial Catalog, nombre de la base de datos ya creada
+            //lo demas son permisos para acceder a la base de datos
             get { return @"Data Source=(local); Initial Catalog=TIENDABD; Integrated Security=True; TrustServerCertificate=true;"; }
             //get { return ConfigurationManager.ConnectionStrings["cadena"].ToString(); }
         }
         public static DataSet EjecutarDataSet(string consulta)
         {
-            string p = conexion.CONECTAR;
-            SqlConnection conectar = new SqlConnection(conexion.CONECTAR);
+            string p = Conexion.CONECTAR;
+            SqlConnection conectar = new SqlConnection(Conexion.CONECTAR);
             conectar.Open();
             SqlCommand cmd = new SqlCommand(consulta, conectar);
             SqlDataAdapter da = new SqlDataAdapter();
@@ -29,9 +32,10 @@ namespace SistemasVentas.DAL
             return ds;
         }
 
-        public static void Ejecutar(string consulta)
+        public static void Ejecutar(string consulta) 
         {
-            SqlConnection conectar = new SqlConnection(conexion.CONECTAR);
+            //consulta tipo sql, alguien mandara un comando sql (INSERT INTO)
+            SqlConnection conectar = new SqlConnection(Conexion.CONECTAR);
             conectar.Open();
             SqlCommand cmd = new SqlCommand(consulta, conectar);
             cmd.CommandTimeout = 5000;
@@ -40,7 +44,8 @@ namespace SistemasVentas.DAL
 
         public static int EjecutarEscalar(string consulta)
         {
-            SqlConnection conectar = new SqlConnection(conexion.CONECTAR);
+            //funciones escalares, de agregado: SUM, AVG, COUNT, MIN, MAX
+            SqlConnection conectar = new SqlConnection(Conexion.CONECTAR);
             conectar.Open();
 
             SqlCommand cmd = new SqlCommand(consulta, conectar);
@@ -50,18 +55,16 @@ namespace SistemasVentas.DAL
         }
         public static DataTable EjecutarDataTabla(string consulta, string tabla)
         {
-            string p = conexion.CONECTAR;
-            SqlConnection conectar = new SqlConnection(conexion.CONECTAR);
+            string p = Conexion.CONECTAR;
+            SqlConnection conectar = new SqlConnection(Conexion.CONECTAR);
             SqlCommand cmd = new SqlCommand(consulta, conectar);
             cmd.CommandTimeout = 5000;
-            SqlDataAdapter da = new SqlDataAdapter();
-            da.SelectCommand = cmd;
+            SqlDataAdapter da = new SqlDataAdapter(); //esto convierte los resultados, las listas
+            da.SelectCommand = cmd; //hace que se pueda manipular desde cualquier boton etc de capa VISTA
             DataTable dt = new DataTable(tabla);
             da.Fill(dt);
             return dt;
         }
-
-        
 
     }
 }

@@ -28,56 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
+            textBox1 = new TextBox();
             button1 = new Button();
             button2 = new Button();
-            textBox1 = new TextBox();
-            label1 = new Label();
             SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(97, 115);
+            label1.Name = "label1";
+            label1.Size = new Size(56, 15);
+            label1.TabIndex = 0;
+            label1.Text = "NOMBRE";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(159, 107);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(313, 23);
+            textBox1.TabIndex = 1;
             // 
             // button1
             // 
-            button1.Location = new Point(123, 189);
+            button1.Location = new Point(232, 223);
             button1.Name = "button1";
-            button1.Size = new Size(152, 23);
-            button1.TabIndex = 0;
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 2;
             button1.Text = "GUARDAR";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(357, 189);
+            button2.Location = new Point(397, 223);
             button2.Name = "button2";
-            button2.Size = new Size(132, 23);
-            button2.TabIndex = 1;
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 3;
             button2.Text = "CANCELAR";
             button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(214, 85);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(240, 23);
-            textBox1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(123, 88);
-            label1.Name = "label1";
-            label1.Size = new Size(56, 15);
-            label1.TabIndex = 3;
-            label1.Text = "NOMBRE";
             // 
             // RolInsertarVista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(608, 320);
-            Controls.Add(label1);
-            Controls.Add(textBox1);
+            ClientSize = new Size(800, 450);
             Controls.Add(button2);
             Controls.Add(button1);
+            Controls.Add(textBox1);
+            Controls.Add(label1);
             Name = "RolInsertarVista";
             Text = "RolInsertarVista";
             ResumeLayout(false);
@@ -86,9 +86,9 @@
 
         #endregion
 
+        private Label label1;
+        private TextBox textBox1;
         private Button button1;
         private Button button2;
-        private TextBox textBox1;
-        private Label label1;
     }
 }

@@ -29,54 +29,54 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            textBox1 = new TextBox();
             button1 = new Button();
             button2 = new Button();
-            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(159, 94);
+            label1.Location = new Point(126, 113);
             label1.Name = "label1";
-            label1.Size = new Size(56, 15);
+            label1.Size = new Size(59, 15);
             label1.TabIndex = 0;
-            label1.Text = "NOMBRE";
+            label1.Text = "NOMBRE:";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(191, 105);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(353, 23);
+            textBox1.TabIndex = 1;
             // 
             // button1
             // 
-            button1.Location = new Point(185, 232);
+            button1.Location = new Point(220, 218);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
-            button1.TabIndex = 1;
+            button1.TabIndex = 2;
             button1.Text = "GUARDAR";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(410, 232);
+            button2.Location = new Point(411, 225);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
-            button2.TabIndex = 2;
+            button2.TabIndex = 3;
             button2.Text = "CANCELAR";
             button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(246, 91);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(248, 23);
-            textBox1.TabIndex = 3;
             // 
             // MarcaInsertarVista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(647, 353);
-            Controls.Add(textBox1);
+            ClientSize = new Size(800, 450);
             Controls.Add(button2);
             Controls.Add(button1);
+            Controls.Add(textBox1);
             Controls.Add(label1);
             Name = "MarcaInsertarVista";
             Text = "MarcaInsertarVista";
@@ -87,8 +87,8 @@
         #endregion
 
         private Label label1;
+        private TextBox textBox1;
         private Button button1;
         private Button button2;
-        private TextBox textBox1;
     }
 }

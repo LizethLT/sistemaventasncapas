@@ -1,6 +1,4 @@
-﻿using SistemasVentas.BSS;
-using SistemaVentas.Modelos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemasVentas.BSS;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.VISTA.ClienteVistas
 {
@@ -27,9 +27,8 @@ namespace SistemasVentas.VISTA.ClienteVistas
             c.TipoCliente = textBox2.Text;
             c.CodigoCliente = textBox3.Text;
 
-            bss.InsertarClienteBss(c);
-            MessageBox.Show("Se guardo correctamente la Cliente");
-
+            bss.InsertarClientesBss(c);
+            MessageBox.Show("Se guardó correctamente!");
         }
     }
 }
