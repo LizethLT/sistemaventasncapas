@@ -57,5 +57,14 @@ namespace SistemasVentas.DAL
             string consulta = "delete from ingreso where idingreso =" + id;
             conexion.Ejecutar(consulta);
         }
+
+        public DataTable IngresoDatosDal()
+        {
+            string consulta = "SELECT INGRESO.IDINGRESO, INGRESO.FECHAINGRESO, PROVEEDOR.NOMBRE "+
+                            "  FROM INGRESO INNER JOIN "+
+                            " PROVEEDOR ON INGRESO.IDPROVEEDOR = PROVEEDOR.IDPROVEEDOR ";
+
+            return conexion.EjecutarDataTabla(consulta, "fsdf");
+        }
     }
 }

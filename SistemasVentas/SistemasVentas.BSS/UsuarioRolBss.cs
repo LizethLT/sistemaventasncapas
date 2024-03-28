@@ -36,5 +36,9 @@ namespace SistemasVentas.BSS
         {
             dal.EliminarUsuarioRolDal(id);
         }
+        public DataTable UsuarioRolDatosBss()
+        {
+            return dal.UsuarioRolDatosDal();
+        }
     }
 }

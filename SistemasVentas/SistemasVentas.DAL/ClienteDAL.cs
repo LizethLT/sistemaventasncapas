@@ -58,5 +58,15 @@ namespace SistemasVentas.DAL
             string consulta = "delete from cliente where idcliente =" + id;
             conexion.Ejecutar(consulta);
         }
+
+        public DataTable ClienteDatosDal()
+        {
+            string consulta = " SELECT CLIENTE.IDCLIENTE, CLIENTE.TIPOCLIENTE, (PERSONA.NOMBRE+''+ PERSONA.APELLIDO)NOMBRECOMPLETO, VENTA.FECHA "+
+                            " FROM CLIENTE INNER JOIN "+
+                         " PERSONA ON CLIENTE.IDPERSONA = PERSONA.IDPERSONA INNER JOIN "+
+                          " VENTA ON CLIENTE.IDCLIENTE = VENTA.IDCLIENTE";
+                            
+            return conexion.EjecutarDataTabla(consulta, "fsdf");
+        }
     }
 }

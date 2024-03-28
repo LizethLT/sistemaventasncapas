@@ -36,5 +36,9 @@ namespace SistemasVentas.BSS
         {
             dal.EliminarIngresoDal(id);
         }
+        public DataTable IngresoDatosBss()
+        {
+            return dal.IngresoDatosDal();
+        }
     }
 }

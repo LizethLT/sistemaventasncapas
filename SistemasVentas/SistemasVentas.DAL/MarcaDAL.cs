@@ -54,5 +54,7 @@ namespace SistemasVentas.DAL
             string consulta = "delete from marca where idmarca =" + id;
             conexion.Ejecutar(consulta);
         }
+
+   
     }
 }

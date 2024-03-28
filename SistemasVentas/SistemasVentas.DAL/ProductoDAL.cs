@@ -28,5 +28,14 @@ namespace SistemasVentas.DAL
                                                          "'Activo')";
             conexion.Ejecutar(consulta);
         }
+        public DataTable ProductoDatosDal()
+        {
+            string consulta = " SELECT PRODUCTO.IDPRODUCTO, PRODUCTO.NOMBRE, TIPOPROD.NOMBRE AS Expr1, MARCA.NOMBRE AS Expr2, PRODUCTO.ESTADO, PRODUCTO.DESCRIPCION "+
+                             "  FROM  PRODUCTO INNER JOIN"+
+                              " TIPOPROD ON PRODUCTO.IDTIPOPROD = TIPOPROD.IDTIPOPROD INNER JOIN"+
+                              " MARCA ON PRODUCTO.IDMARCA = MARCA.IDMARCA";
+
+            return conexion.EjecutarDataTabla(consulta, "fsdf");
+        }
     }
 }
