@@ -24,5 +24,6 @@ namespace SistemasVentas.BSS
         {
             return dal.ProveeDatosDal();
         }
+
     }
 }

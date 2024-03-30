@@ -35,5 +35,7 @@ namespace SistemasVentas.DAL
 
             return conexion.EjecutarDataTabla(consulta, "fsdf");
         }
+
+
     }
 }

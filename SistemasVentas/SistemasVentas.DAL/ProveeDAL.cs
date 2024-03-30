@@ -25,6 +25,7 @@ namespace SistemasVentas.DAL
                                                          "" +provee.Precio + " ," +")";
             conexion.Ejecutar(consulta);
         }
+
         public DataTable ProveeDatosDal()
         {
             string consulta = "SELECT  PROVEE.IDPROVEE, PROVEE.FECHA, PROVEE.PRECIO, PRODUCTO.NOMBRE, PRODUCTO.DESCRIPCION, PROVEEDOR.NOMBRE AS Expr1, PROVEEDOR.DIRECCION " +

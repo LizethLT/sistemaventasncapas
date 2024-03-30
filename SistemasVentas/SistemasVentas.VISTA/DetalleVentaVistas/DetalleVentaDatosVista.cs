@@ -1,5 +1,4 @@
-﻿using SistemasVentas.BSS;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemasVentas.BSS;
 
 namespace SistemasVentas.VISTA.DetalleVentaVistas
 {
@@ -17,7 +17,7 @@ namespace SistemasVentas.VISTA.DetalleVentaVistas
         {
             InitializeComponent();
         }
-        DetalleVentaBss bss = new DetalleVentaBss();    
+        DetalleVentaBss bss = new DetalleVentaBss();
         private void DetalleVentaDatosVista_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bss.DetalleVentaDatosBss();

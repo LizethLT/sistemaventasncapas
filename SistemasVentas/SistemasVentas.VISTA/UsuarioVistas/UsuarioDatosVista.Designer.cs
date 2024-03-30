@@ -37,18 +37,18 @@
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 12);
+            dataGridView1.Location = new Point(7, 12);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(582, 426);
+            dataGridView1.Size = new Size(419, 426);
             dataGridView1.TabIndex = 0;
             // 
             // UsuarioDatosVista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(606, 450);
+            ClientSize = new Size(444, 450);
             Controls.Add(dataGridView1);
             Name = "UsuarioDatosVista";
             Text = "UsuarioDatosVista";

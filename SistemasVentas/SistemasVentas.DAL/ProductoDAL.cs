@@ -28,6 +28,7 @@ namespace SistemasVentas.DAL
                                                          "'Activo')";
             conexion.Ejecutar(consulta);
         }
+
         public DataTable ProductoDatosDal()
         {
             string consulta = " SELECT PRODUCTO.IDPRODUCTO, PRODUCTO.NOMBRE, TIPOPROD.NOMBRE AS Expr1, MARCA.NOMBRE AS Expr2, PRODUCTO.ESTADO, PRODUCTO.DESCRIPCION " +
