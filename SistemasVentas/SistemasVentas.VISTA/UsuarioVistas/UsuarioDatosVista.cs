@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace SistemasVentas.VISTA.UsuarioVistas
 {
-    public partial class UsuarioDatos : Form
+    public partial class UsuarioDatosVista : Form
     {
-        public UsuarioDatos()
+        public UsuarioDatosVista()
         {
             InitializeComponent();
         }
         UsuarioBss bss = new UsuarioBss();
-        private void UsuarioDatos_Load(object sender, EventArgs e)
+        private void UsuarioDatosVista_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bss.UsuarioDatosBss();
         }

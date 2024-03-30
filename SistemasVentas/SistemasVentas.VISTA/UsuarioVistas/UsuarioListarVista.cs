@@ -22,7 +22,7 @@ namespace SistemasVentas.VISTA.UsuarioVistas
 
         private void UsuarioListarVista_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = bss.UsuarioDatosBss();
+            dataGridView1.DataSource = bss.ListarUsuariosBss();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -62,7 +62,5 @@ namespace SistemasVentas.VISTA.UsuarioVistas
                 dataGridView1.DataSource = bss.ListarUsuariosBss();
             }
         }
-
-
     }
 }

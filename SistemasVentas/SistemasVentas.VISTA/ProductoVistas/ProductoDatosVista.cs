@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SistemasVentas.BSS;
+using SistemasVentas.Modelos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SistemasVentas.BSS;
 
 namespace SistemasVentas.VISTA.ProductoVistas
 {
@@ -21,7 +22,6 @@ namespace SistemasVentas.VISTA.ProductoVistas
         private void ProductoDatosVista_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bss.ProductoDatosBss();
-
         }
     }
 }

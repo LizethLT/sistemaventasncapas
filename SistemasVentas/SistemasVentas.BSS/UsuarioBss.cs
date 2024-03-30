@@ -36,10 +36,11 @@ namespace SistemasVentas.BSS
         {
             dal.EliminarUsuarioDal(id);
         }
-
-        public DataTable UsuarioDatosBss() 
-        { 
+        public DataTable UsuarioDatosBss()
+        {
             return dal.UsuarioDatosDal();
         }
+
+
     }
 }

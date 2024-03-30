@@ -32,9 +32,9 @@ namespace SistemasVentas.DAL
 
         public DataTable DetalleIngDatosDal()
         {
-            string consulta = " SELECT DETALLEING.FECHAVENC, DETALLEING.IDDETALLEING, PRODUCTO.NOMBRE "+
-                              "  FROM DETALLEING INNER JOIN "+
-                        " PRODUCTO ON DETALLEING.IDPRODUCTO = PRODUCTO.IDPRODUCTO INNER JOIN"+
+            string consulta = " SELECT DETALLEING.FECHAVENC, DETALLEING.IDDETALLEING, PRODUCTO.NOMBRE " +
+                              "  FROM DETALLEING INNER JOIN " +
+                        " PRODUCTO ON DETALLEING.IDPRODUCTO = PRODUCTO.IDPRODUCTO INNER JOIN" +
                          " INGRESO ON DETALLEING.IDINGRESO = INGRESO.IDINGRESO";
 
             return conexion.EjecutarDataTabla(consulta, "fsdf");

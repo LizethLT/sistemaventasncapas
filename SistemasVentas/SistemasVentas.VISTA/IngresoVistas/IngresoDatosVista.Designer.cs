@@ -41,14 +41,14 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(480, 415);
+            dataGridView1.Size = new Size(476, 426);
             dataGridView1.TabIndex = 0;
             // 
             // IngresoDatosVista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(508, 450);
+            ClientSize = new Size(497, 450);
             Controls.Add(dataGridView1);
             Name = "IngresoDatosVista";
             Text = "IngresoDatosVista";

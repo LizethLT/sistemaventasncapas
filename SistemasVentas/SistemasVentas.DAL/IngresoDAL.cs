@@ -60,8 +60,8 @@ namespace SistemasVentas.DAL
 
         public DataTable IngresoDatosDal()
         {
-            string consulta = "SELECT INGRESO.IDINGRESO, INGRESO.FECHAINGRESO, PROVEEDOR.NOMBRE "+
-                            "  FROM INGRESO INNER JOIN "+
+            string consulta = "SELECT INGRESO.IDINGRESO, INGRESO.FECHAINGRESO, PROVEEDOR.NOMBRE " +
+                            "  FROM INGRESO INNER JOIN " +
                             " PROVEEDOR ON INGRESO.IDPROVEEDOR = PROVEEDOR.IDPROVEEDOR ";
 
             return conexion.EjecutarDataTabla(consulta, "fsdf");

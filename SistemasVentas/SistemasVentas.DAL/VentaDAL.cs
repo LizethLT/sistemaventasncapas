@@ -29,8 +29,8 @@ namespace SistemasVentas.DAL
 
         public DataTable VentaDatosDal()
         {
-            string consulta = "SELECT VENTA.IDVENTA, VENTA.FECHA, CLIENTE.TIPOCLIENTE, VENTA.TOTAL"+
-                              " FROM            VENTA INNER JOIN"+
+            string consulta = "SELECT VENTA.IDVENTA, VENTA.FECHA, CLIENTE.TIPOCLIENTE, VENTA.TOTAL" +
+                              " FROM            VENTA INNER JOIN" +
                               " CLIENTE ON VENTA.IDCLIENTE = CLIENTE.IDCLIENTE ";
 
             return conexion.EjecutarDataTabla(consulta, "fsdf");

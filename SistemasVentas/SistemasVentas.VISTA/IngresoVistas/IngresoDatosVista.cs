@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemasVentas.BSS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SistemasVentas.BSS;
 
 namespace SistemasVentas.VISTA.IngresoVistas
 {
@@ -21,8 +21,6 @@ namespace SistemasVentas.VISTA.IngresoVistas
         private void IngresoDatosVista_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bss.IngresoDatosBss();
-
         }
-
     }
 }

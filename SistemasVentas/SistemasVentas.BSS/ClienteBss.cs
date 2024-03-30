@@ -40,5 +40,6 @@ namespace SistemasVentas.BSS
         {
             return dal.ClienteDatosDal();
         }
+
     }
 }

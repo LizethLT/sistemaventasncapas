@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemasVentas.BSS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SistemasVentas.BSS;
+
 namespace SistemasVentas.VISTA.UsuarioRolVistas
 {
     public partial class UsuarioRolDatosVista : Form
@@ -20,7 +21,6 @@ namespace SistemasVentas.VISTA.UsuarioRolVistas
         private void UsuarioRolDatosVista_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bss.UsuarioRolDatosBss();
-
         }
     }
 }

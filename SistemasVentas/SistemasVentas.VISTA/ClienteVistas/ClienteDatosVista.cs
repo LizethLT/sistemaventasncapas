@@ -1,5 +1,4 @@
 ﻿using SistemasVentas.BSS;
-using SistemasVentas.DAL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,7 +17,7 @@ namespace SistemasVentas.VISTA.ClienteVistas
         {
             InitializeComponent();
         }
-        ClienteBss bss = new ClienteBss();
+        ClienteBss bss = new ClienteBss();  
         private void ClienteDatosVista_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bss.ClienteDatosBss();

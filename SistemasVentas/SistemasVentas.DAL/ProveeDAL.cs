@@ -27,9 +27,9 @@ namespace SistemasVentas.DAL
         }
         public DataTable ProveeDatosDal()
         {
-            string consulta = "SELECT  PROVEE.IDPROVEE, PROVEE.FECHA, PROVEE.PRECIO, PRODUCTO.NOMBRE, PRODUCTO.DESCRIPCION, PROVEEDOR.NOMBRE AS Expr1, PROVEEDOR.DIRECCION "+
-                             " FROM            PROVEE INNER JOIN "+
-                             " PRODUCTO ON PROVEE.IDPRODUCTO = PRODUCTO.IDPRODUCTO INNER JOIN"+
+            string consulta = "SELECT  PROVEE.IDPROVEE, PROVEE.FECHA, PROVEE.PRECIO, PRODUCTO.NOMBRE, PRODUCTO.DESCRIPCION, PROVEEDOR.NOMBRE AS Expr1, PROVEEDOR.DIRECCION " +
+                             " FROM            PROVEE INNER JOIN " +
+                             " PRODUCTO ON PROVEE.IDPRODUCTO = PRODUCTO.IDPRODUCTO INNER JOIN" +
                              " PROVEEDOR ON PROVEE.IDPROVEEDOR = PROVEEDOR.IDPROVEEDOR ";
 
             return conexion.EjecutarDataTabla(consulta, "fsdf");
